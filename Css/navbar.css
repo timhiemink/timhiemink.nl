@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Garet&display=swap');
+
+header {
+    background-color: #D5F2E3; /* Same as page background color */
+    color: #01110A;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 20px 0px 20px;
+    text-align: left;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between logo and menu */
+    /* background-color: #f0f0f0; */
+    padding: 0px 0px 5px 10px;
+    font-family: 'Garet', sans-serif; /* Apply Garet font to the navbar */
+    font-weight: 500; /* Make the font bold */
+    overflow: hidden;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    display: inline; /* Display items horizontally */
+    margin: 0 40px 0px 0; /* Add spacing between menu items */
+}
+
+.nav-menu li a {
+    color: #73BA9B;
+    text-decoration: none; /* Remove underline */
+    font-size: 1em;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    border-color: #ffffff;
+    transition: border-color 0.5s ease, color 0.5s ease;
+}
+
+.nav-menu li a:hover {
+    /* text-decoration: underline; /* Underline on hover */
+    color: #003E1F;
+    border-color: #003E1F;
+}
+
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-menu {
+        height: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        margin: 0 0 0 0;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        background-color: #73BA9B;
+        transition: top 2s ease;
+        display: none
+    }
+
+    .nav-menu li {
+        margin: 0 0 20px 0; /* Add spacing between menu items */
+    }
+   
+    .icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 14px 16px;
+        cursor: pointer;
+    }
+}

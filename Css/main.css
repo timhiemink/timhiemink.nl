@@ -27,7 +27,7 @@ body {
 
 .main-front {
     font-family: 'Abril Fatface', sans-serif;
-    background-image: url("Images/OostenrijkAppel.jpg");
+    background-image: url("/Images/OostenrijkAppel.jpg");
     height: calc(100vh - 50px); /* Adjust height based on navbar height */
     background-size: cover;
     background-position: center;

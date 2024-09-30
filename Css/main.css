@@ -25,9 +25,9 @@ body {
     margin: 0px 0px; /* Adjust spacing as needed */
 }
 
-.main-front {
+.container {
     font-family: 'Abril Fatface', sans-serif;
-    background-image: url("../Images/OostenrijkAppel.jpg");
+    background-image: url("../Images/Oostenrijk\ Appel.jpg");
     height: calc(100vh - 50px); /* Adjust height based on navbar height */
     background-size: cover;
     background-position: center;
@@ -35,9 +35,14 @@ body {
     position: relative; /* Ensure the main element is the reference for absolute positioning */
 }
 
+.container img {
+    width: 100%;
+    height: auto;
+  }
+
 .text-center {
     margin: 0 0 0 0;
-    padding: 10% 10% 0 10%;
+    padding: 10vh 10vh 0 10vh;
     text-align: left;
     align-content: center;
 }
@@ -57,4 +62,35 @@ footer {
 
 .no-break {
     white-space: nowrap;
+}
+
+
+button {
+    width: auto;
+    height: auto;
+    padding: 20px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: transform 0.1s ease-in-out;
+    box-shadow: 5px 5px #01110A;
+}
+
+button.paused {
+    background-color: #D5F2E3;
+    color: #01110A;
+    transform: translateY(0);
+}
+
+button.playing {
+    background-color: #73BA9B;
+    color: #01110A;
+    transform: translateY(3px);
+    box-shadow: 5px 3px;
+}
+
+button:active {
+    transform: translateY(3px);
 }
